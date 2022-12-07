@@ -1,66 +1,66 @@
-body{
+body {
     margin: 5vh, 5%;
-    background-color:rgb(238, 200, 154);
+    background-color: rgb(238, 200, 154);
 }
 
-.imgHombre{
+.imgHombre {
     width: 100%;
     height: 100%;
     justify-self: center;
 }
 
-nav{
-    display:flex;
-    flex-direction:row;
+nav {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     background-image: url(./imagenesTienda/inicio/bannerGrande.jpg);
     height: 16vh;
-    width:100%; 
+    width: 100%;
 }
 
-footer{
+footer {
     margin-top: 3%;
     background-color: cornflowerblue;
-    
+
 }
 
-.botonFooter{
+.botonFooter {
     font-size: 1.2em;
     width: 10%;
     height: 50%;
     background-color: aquamarine;
 }
 
-h1{
+h1 {
     text-align: center;
     font-size: 3em;
     margin: 0px;
 }
 
-a{
-    margin : 1em 2%;   
+a {
+    margin: 1em 2%;
     height: 2em;
     width: 6em;
-    display:flex;
+    display: flex;
     justify-content: center;
     font-size: xx-large;
     box-shadow: 5px 5px 6px 0.3vw black;
     border-radius: 15px;
-    background-color:goldenrod;
-    color:black;
+    background-color: goldenrod;
+    color: black;
     text-decoration: none;
 }
 
-#botonInicio{
+#botonInicio {
     align-items: center;
     margin-right: 20%;
 }
 
-#botonInicio:hover{
+#botonInicio:hover {
     background-color: lightsteelblue;
 }
 
-.boton{
+.boton {
     font-size: 2.8vw;
     align-self: center;
     align-items: center;
@@ -73,38 +73,38 @@ a{
     -webkit-transition: all 0.5s ease;
 }
 
-.boton:hover{
-    color:whitesmoke;
-    text-shadow:1px 1px 3px black;
-    background-color:lightsalmon;
+.boton:hover {
+    color: whitesmoke;
+    text-shadow: 1px 1px 3px black;
+    background-color: lightsalmon;
 }
 
 #parrafo:hover::before {
-        background-color: white;
-        color:black;
+    background-color: white;
+    color: black;
 }
 
-.botonFotosIndex{
+.botonFotosIndex {
     margin: 0;
     width: auto;
     height: auto;
     box-shadow: 5px 5px 10px black;
 }
 
-#activo{
+#activo {
     box-shadow: 5px 5px 5px 2px black inset;
     color: whitesmoke;
     background-color: lightsalmon;
 }
 
-section{
+section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
 }
 
-div{
+div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,181 +112,189 @@ div{
     margin: 2% 0;
 }
 
-.imgHombre:active, .imagenes:active{
+.imgHombre:active,
+.imagenes:active {
     position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            width: 50vw;
-            height: 80vh;
-            margin: auto;
-            z-index: 1;
-            object-fit: contain;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50vw;
+    height: 80vh;
+    margin: auto;
+    z-index: 1;
+    object-fit: contain;
 }
 
-.indexf{
+.indexf {
     align-items: center;
     width: 50%;
     margin: 0 3%;
 }
 
-.indexp{
+.indexp {
     font-size: 2.5em;
     text-align: center;
     margin: 1%;
 }
 
-#indexSect{
+#indexSect {
     flex-direction: row;
 }
 
-#indexCentro{
+#indexCentro {
     align-items: end;
-    margin-top:15%;
+    margin-top: 15%;
 }
 
-.fotosIndex{
+.fotosIndex {
     box-shadow: 5px 5px 10px black;
 }
 
-img{
+img {
     width: 100%;
 }
 
-.imagenes{
+.imagenes {
     width: 100%;
 }
 
-.producto{
-    margin: 3% 0 0 0 ;
+.producto {
+    margin: 3% 0 0 0;
     height: 8%;
     text-align: center;
     font-size: 1.5vw;
 }
 
-.precio{
+.precio {
     margin: 0 0 4% 0;
     height: 8%;
     text-align: center;
     font-size: 1.5vw;
 }
 
+
+
 @media screen and (max-width:900px) {
-    body{
+    body {
         background-color: lightsalmon;
     }
 
-    nav{
+    nav {
         background-image: url(./imagenesTienda/inicio/bannerMed.jpg);
     }
 
-    h1{
+    h1 {
         font-size: 2em;
     }
 
-    a{
+    a {
         width: 18vw;
         height: 7vh;
     }
 
-    section{
-        flex-flow:wrap;
+    section {
+        flex-flow: wrap;
     }
 
-    div{
+    div {
         width: 30%;
     }
 
-    .indexp{
+    .indexp {
         font-size: 5vw;
     }
 
-    .indexf{
+    .indexf {
         align-items: center;
         width: 27%;
         margin: 0 3%;
     }
 
-    .precio, .producto{
+    .precio,
+    .producto {
         font-size: 13px;
     }
 
-    .botonFooter{
+    .botonFooter {
         width: 30%;
         border-radius: 9px;
         box-shadow: 4px 4px 5px black;
     }
-    
+
 }
 
 @media screen and (max-width:400px) {
-    body{
-        background-color:darkorange ;
+    body {
+        background-color: darkorange;
     }
 
-    nav{
+    nav {
         background-image: url(./imagenesTienda/inicio/bannerPeque.jpg);
 
     }
 
-    h1{
+    h1 {
         font-size: 1.5em;
     }
 
-    a{
+    a {
         width: 18vw;
         height: 7vh;
     }
 
-    .boton{
+    .boton {
         font-size: 4vw;
         width: 25%;
     }
-    
-    #indexSect{
+
+    #indexSect {
         flex-direction: column;
     }
 
-    section{
-        flex-flow:column;
+    section {
+        flex-flow: column;
         align-items: center;
     }
 
-    div{
+    div {
         width: 60%;
     }
 
-    .indexp{
-        font-size: 3vw;
+    .indexp {
+        font-size: 4.5vw;
+        align-self: center;
     }
 
-    .indexf{
+    .indexf {
         align-items: center;
         width: 15%;
         margin: 0 3%;
     }
 
-    #indexHombre{
-        margin-right: 60%;
-        width: 25%;
+    #indexHombre {
+        margin-right: 55%;
+        width: 40%;
     }
 
-    #indexCentro{
-        margin: 0;
-        width: 25%;
+    #indexCentro {
+        margin-top: 0;
+        margin-left: 55%;
+        width: 40%;
     }
 
-    #indexMujer{
-        margin-left: 60%;
-        width: 25%;
+    #indexMujer {
+        margin-right: 55%;
+        margin-bottom: 15%;
+        width: 40%;
     }
 
-    .precio, .producto{
+    .precio,
+    .producto {
         font-size: 6vw;
     }
 
-    .botonFooter{
+    .botonFooter {
         width: 30%;
         border-radius: 9px;
         box-shadow: 4px 4px 5px black;
