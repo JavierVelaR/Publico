@@ -51,19 +51,37 @@ a{
     text-decoration: none;
 }
 
-a:hover{
-    color:white;
-}
-
 #botonInicio{
     align-items: center;
     margin-right: 20%;
+}
+
+#botonInicio:hover{
+    background-color: lightsteelblue;
 }
 
 .boton{
     font-size: 2.8vw;
     align-self: center;
     align-items: center;
+    transition: all 1s ease;
+    -webkit-transition: all 0.5s ease;
+}
+
+.boton::before {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+
+.boton:hover{
+    color:whitesmoke;
+    text-shadow:1px 1px 3px black;
+    background-color:lightsalmon;
+}
+
+#parrafo:hover::before {
+        background-color: white;
+        color:black;
 }
 
 .botonFotosIndex{
@@ -75,7 +93,8 @@ a:hover{
 
 #activo{
     box-shadow: 5px 5px 5px 2px black inset;
-
+    color: whitesmoke;
+    background-color: lightsalmon;
 }
 
 section{
@@ -189,8 +208,14 @@ img{
         margin: 0 3%;
     }
 
-.precio, .producto{
+    .precio, .producto{
         font-size: 13px;
+    }
+
+    .botonFooter{
+        width: 30%;
+        border-radius: 9px;
+        box-shadow: 4px 4px 5px black;
     }
     
 }
@@ -213,6 +238,11 @@ img{
         width: 18vw;
         height: 7vh;
     }
+
+    .boton{
+        font-size: 4vw;
+        width: 25%;
+    }
     
     #indexSect{
         flex-direction: column;
@@ -220,14 +250,15 @@ img{
 
     section{
         flex-flow:column;
+        align-items: center;
     }
 
     div{
-        width: 100%;
+        width: 60%;
     }
 
     .indexp{
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     .indexf{
@@ -237,18 +268,27 @@ img{
     }
 
     #indexHombre{
-        margin-left: 15%;
+        margin-right: 60%;
+        width: 25%;
     }
 
     #indexCentro{
-        margin-left: 35%;
+        margin: 0;
+        width: 25%;
     }
 
     #indexMujer{
-        margin-left: 75%;
+        margin-left: 60%;
+        width: 25%;
     }
 
     .precio, .producto{
-        font-size: 8vw;
+        font-size: 6vw;
+    }
+
+    .botonFooter{
+        width: 30%;
+        border-radius: 9px;
+        box-shadow: 4px 4px 5px black;
     }
 }
