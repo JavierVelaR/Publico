@@ -19,7 +19,7 @@ nav {
 }
 
 footer {
-    margin-top: 3%;
+    margin-top: 10%;
     background-color: cornflowerblue;
 
 }
@@ -195,7 +195,7 @@ img {
     .boton {
         font-size: 4vw;
         width: 35%;
-        height: 50%;
+        height: 60%;
     }
 
     section {
@@ -249,7 +249,7 @@ img {
     }
 
     .boton {
-        font-size: 4vw;
+        font-size: 1em;
         width: 35%;
         height: 50%;
     }
@@ -309,5 +309,6 @@ img {
         width: 30%;
         border-radius: 9px;
         box-shadow: 4px 4px 5px black;
+        font-size: 0.8em;
     }
 }
