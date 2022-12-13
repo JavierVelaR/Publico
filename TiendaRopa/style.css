@@ -3,10 +3,11 @@ body {
     background-color: rgb(238, 200, 154);
 }
 
-.imgHombre {
-    width: 100%;
+.imagenes {
+    width: 50%;
     height: 100%;
     justify-self: center;
+    object-fit: cover;
 }
 
 nav{
@@ -243,12 +244,11 @@ div {
 
 @media screen and (max-width:400px) {
     body {
-        background-color: darkorange;
+        background-color: rgb(234, 175, 102);
     }
 
     .naveg {
         background-image: url(./imagenesTienda/banner/bannerPeque-h.jpg);
-
     }
 
     h1 {
