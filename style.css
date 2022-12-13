@@ -9,18 +9,25 @@ body {
     justify-self: center;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-image: url(./imagenesTienda/banner/bannerGrande-h.jpg);
+nav{
     height: 16vh;
     width: 100%;
 }
 
+#banner{
+    height: 16vh;
+    width: 100%;
+}
+
+.naveg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(./imagenesTienda/banner/bannerGrande-h.jpg);
+}
+
 footer {
     margin-top: 10%;
-    background-color: cornflowerblue;
 }
 
 .botonFooter {
@@ -172,13 +179,12 @@ img {
 }
 
 
-
 @media screen and (max-width:900px) {
     body {
         background-color: lightsalmon;
     }
 
-    nav {
+    .naveg {
         background-image: url(./imagenesTienda/banner/bannerMed-h.jpg);
     }
 
@@ -228,26 +234,12 @@ img {
 
 }
 
-@media screen and (orientation:landscape) {
-    #portaFoto {
-        max-width: 1920px;
-        max-height: 1280px;
-    }
-}
-
-@media screen and (orientation:portrait) {
-    #portaFoto {
-        max-width: 800px;
-        max-height: 1200px;
-    }
-}
-
 @media screen and (max-width:400px) {
     body {
         background-color: darkorange;
     }
 
-    nav {
+    .naveg {
         background-image: url(./imagenesTienda/banner/bannerPeque-h.jpg);
 
     }
