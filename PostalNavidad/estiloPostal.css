@@ -68,4 +68,8 @@ div:active {
         width: 70vh;
         margin-left: calc(50vw - 35vh);
     }
+
+    p{
+        font-size: 5vh;
+    }
 }
