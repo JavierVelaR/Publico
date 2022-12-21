@@ -48,12 +48,12 @@ p {
     z-index: 2;
 }
 
-p:first-of-type{
+p:first-of-type {
     font-weight: bold;
     text-shadow: 4px 4px 3px black;
 }
 
-p:nth-child(3){
+p:nth-child(3) {
     color: goldenrod;
     font-style: italic;
 }
@@ -63,13 +63,15 @@ div:active {
     opacity: 1;
 }
 
-@media all and (orientation:landscape){
-    img, div{
+@media all and (orientation:landscape) {
+
+    img,
+    div {
         width: 70vh;
         margin-left: calc(50vw - 35vh);
     }
 
-    p{
-        font-size: 10vh;
+    p {
+        font-size: 1.5em;
     }
 }
