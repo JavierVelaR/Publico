@@ -53,6 +53,11 @@ p:first-of-type{
     text-shadow: 4px 4px 3px black;
 }
 
+p:nth-child(2){
+    color: rgb(35, 203, 16);
+    font-size: 1.75em;
+}
+
 p:nth-child(3){
     color: goldenrod;
     font-style: italic;
@@ -68,8 +73,25 @@ div:active {
         width: 70vh;
         margin-left: calc(50vw - 35vh);
     }
+}
 
+@media screen and (max-height) {
     p{
-        font-size: 1em;
+        font-size: 1.25em;
+    }
+
+    p:first-of-type{
+        font-weight: bold;
+        text-shadow: 4px 4px 3px black;
+    }
+    
+    p:nth-child(2){
+        color: rgb(35, 203, 16);
+        font-size: 0.75em;
+    }
+    
+    p:nth-child(3){
+        color: goldenrod;
+        font-style: italic;
     }
 }
