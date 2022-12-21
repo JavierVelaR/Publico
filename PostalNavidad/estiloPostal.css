@@ -44,7 +44,7 @@ p {
     color: whitesmoke;
     text-shadow: 2px 2px 2px black;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
     z-index: 2;
 }
 
@@ -67,5 +67,9 @@ div:active {
     img, div{
         width: 70vh;
         margin-left: calc(50vw - 35vh);
+    }
+
+    p{
+        font-size: 1.5em;
     }
 }
