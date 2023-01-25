@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cancion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cancion.xsd">
+    <titulo>A una rosa</titulo>
+    <autor>Luis de Góngora</autor>
+    <letra>
+        <estrofa>
+            <verso>Ayer naciste, y morirás mañana.</verso>
+            <verso>Para tan breve ser, ¿quién te dio vida?</verso>
+            <verso>¿Para vivir tan poco estás lúcida,</verso>
+            <verso>y para no ser nada estás lozana?</verso>
+        </estrofa>
+        
+        <estrofa>
+            <verso>Si te engañó tu hermosura vana,</verso>
+            <verso>bien presto la verás desvanecida,</verso>
+            <verso>porque en tu hermosura está escondida</verso>
+            <verso>la ocasión de morir muerte temprana.</verso>
+        </estrofa>
+    
+        <estrofa>
+            <verso>Cuando te corte la robusta mano,</verso>
+            <verso>ley de la agricultura permitida,</verso>
+            <verso>grosero aliento acabará tu suerte.</verso>
+        </estrofa>
+    
+        <estrofa>
+            <verso>No salgas, que te aguarda algún tirano;</verso>
+            <verso>dilata tu nacer para tu vida,</verso>
+            <verso>que anticipas tu ser para tu muerte.</verso>
+        </estrofa>
+    </letra>
+</cancion>

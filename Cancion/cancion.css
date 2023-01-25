@@ -1,0 +1,23 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+h2{
+	font-size: 1.5em;
+	font-style: italic;
+	color: blue;
+}
+
+p::before{
+	counter-reset: select;
+	counter-increment: 1;
+		color: blue;
+}
+
+span{
+	font-size: 2em;
+	color: blue;
+	background-color: yellow;
+	font-weight: bold;
+}
