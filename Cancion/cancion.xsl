@@ -14,9 +14,11 @@
 	</xsl:template>
 	
 	<xsl:template match="cancion/titulo">
-		<span>
-			<titulo><xsl:value-of select="."/></titulo>
-		</span>
+		<h1>
+			<span>
+				<titulo><xsl:value-of select="."/></titulo>
+			</span>
+		</h1>
 	</xsl:template>
 	
 	<xsl:template match="cancion/autor">

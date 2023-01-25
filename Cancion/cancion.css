@@ -3,6 +3,10 @@
 	margin: 0;
 }
 
+h1{
+	font-size: 2em;
+}
+
 h2{
 	font-size: 1.5em;
 	font-style: italic;
@@ -16,7 +20,6 @@ p::before{
 }
 
 span{
-	font-size: 2em;
 	color: blue;
 	background-color: yellow;
 	font-weight: bold;
