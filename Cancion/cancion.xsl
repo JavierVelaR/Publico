@@ -4,11 +4,13 @@
 	<xsl:template match="/">
 		<html>
 			<head>
-				<link ref="stylesheet" type="text/css" href="cancion.css"/>
+				<link rel="stylesheet" type="text/css" href="cancion.css"/>
 			</head>
 		
 			<body>
-				<xsl:apply-templates/>
+				<main>
+					<xsl:apply-templates/>
+				</main>
 			</body>
 		</html>
 	</xsl:template>
@@ -29,6 +31,7 @@
 	
 	<xsl:template match="cancion/letra/estrofa">
 		<estrofa><xsl:apply-templates/></estrofa>
+		<br></br>
 	</xsl:template>
 	
 	<xsl:template match="cancion/letra/estrofa/verso">
