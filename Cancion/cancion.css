@@ -3,6 +3,10 @@
 	margin: 0;
 }
 
+body{
+	counter-reset: section;
+}
+
 h1{
 	font-size: 2em;
 }
@@ -20,8 +24,8 @@ p{
 }
 
 p::before{
-	counter-reset: section;
-	counter-increment: 1;
+	counter-increment: section;
+	content: counter(section)" - ";	
 }
 
 span{
