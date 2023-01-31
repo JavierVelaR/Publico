@@ -33,20 +33,3 @@ span{
 	background-color: yellow;
 	font-weight: bold;
 }
-
-div{
-	align-self: center;
-}
-
-#encabezado{
-	align-self: center;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 15px;
-}
-
-#letra{
-	display: flex;
-	flex-direction: row;
-	overflow: hidden;
-}
