@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Boton para ocultar el modal*/
+#cerrarModal{
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 0 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    background-color: red;
+}
+
+/*Colorear la 'X' de cerrar en negro*/
+#cerrarModal:hover{
+    color:black;
+}
+
+/*Cambiar el fondo del modal para que sea más visible*/
+.modal{
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+/*Cuando es seleccionado como target*/
+.modal:target{
+    display: table;
+    position: absolute;
+    
+}
+
+/*Caja que contiene la información*/
+#modalCuadrado{
+    position: fixed;
+    top: 25%;
+    left: 20%;
+    right: 20%;
+    bottom: 0%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*Color de fondo de la parte central del modal*/
+#modalTexto{
+    background-color: azure;
+}
+
+/*Estilos de las partes superior e inferior del modal*/
+header,footer{
+    padding: 10px 0;
+    font-size: 1.3em;
+    background-color: aqua;
+}
+
+p,h3,h2{
+    margin: 2px 15px;
+}
+
+#textoInicial{
+    font-size: large;
+}
