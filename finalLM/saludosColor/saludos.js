@@ -35,5 +35,3 @@ function saludar(id) {
 }
 
 pintar();
-
-alert("Javier Vela Rivera, 1ºDAM, No lo tengo claro aún.")
