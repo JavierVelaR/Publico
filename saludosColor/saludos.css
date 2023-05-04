@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+div{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.cuadrado:hover{
+    border-style:double;
+}
+
+.columna{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cuadrado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+    height: 22vh;
+    background-color: lightgreen;
+}
+
+#fila2{
+    display: flex;
+    justify-content: center;
+
+}

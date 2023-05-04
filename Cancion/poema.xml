@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="cancion.xsl"?>
+<cancion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cancion.xsd">
+    <titulo>Gacela de la terrible presencia</titulo>
+    <autor>Federico García Lorca</autor>
+    <letra>
+        <estrofa>
+            <verso>Yo quiero que el agua se quede sin cauce.</verso>
+            <verso>Yo quiero que el viento se quede sin valles.</verso>
+        </estrofa>
+        
+        <estrofa>
+            <verso>Quiero que la noche se quede sin ojos</verso>
+            <verso>y mi corazón sin la flor del oro.</verso>
+        </estrofa>
+            
+        <estrofa>
+            <verso>Que los bueyes hablen con las grandes hojas</verso>
+            <verso>y que la lombriz se muera de sombra.</verso>
+        </estrofa>
+        
+        <estrofa>
+            <verso>Que brillen los dientes de la calavera</verso>
+            <verso>y los amarillos inunden la seda.</verso>
+        </estrofa>
+        
+        <estrofa>
+            <verso>Puedo ver el duelo de la noche herida</verso>
+            <verso>luchando enroscada con el mediodía.</verso>
+        </estrofa>
+        
+        <estrofa>
+            <verso>Resisto un ocaso de verde veneno</verso>
+            <verso>y los arcos rotos donde sufre el tiempo.</verso>
+        </estrofa>
+        
+        <estrofa>
+            <verso>Pero no me enseñes tu limpio desnudo</verso>
+            <verso>como un negro cactus abierto en los juncos.</verso>
+        </estrofa>
+        
+        <estrofa>
+            <verso>Déjame en un ansia de oscuros planetas,</verso>
+            <verso>¡pero no me enseñes tu cintura fresca!</verso>
+        </estrofa>
+    </letra>
+</cancion>
