@@ -1,5 +1,5 @@
 function info(){
-    alert("Javier Vela Rivera, 1ºDAM, No lo sé aún");
+    alert("Javier Vela Rivera, 1ºDAM, Tienda de ropa (no es seguro aún");
 }
 
 function cambiarTema(id){
