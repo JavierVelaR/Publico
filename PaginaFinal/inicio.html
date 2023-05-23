@@ -1,0 +1,87 @@
+<!--
+    Creado por Javier Vela
+    Ultima modificacion: 13/12/2022
+
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    
+</head>
+<body>
+    <nav>
+        <picture id="banner">
+            
+            <!-- imágenes GRANDES -->
+            
+            <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./imagenesTienda/banner/bannerGrande-h.heic" type="image/heic">
+            <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./imagenesTienda/banner/bannerGrande-h.webp" type="image/webp">
+            <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./imagenesTienda/banner/bannerGrande-h.jpg" type="image/jpeg">
+            <source media="(orientation: portrait) and (min-width:601px)" srcset="./imagenesTienda/banner/bannerGrande-v.heic" type="image/heic">
+            <source media="(orientation: portrait) and (min-width:601px)" srcset="./imagenesTienda/banner/bannerGrande-v.webp" type="image/webp">
+            <source media="(orientation: portrait) and (min-width:601px)" srcset="./imagenesTienda/banner/bannerGrande-v.jpg" type="image/jpg">
+            
+            <!-- imágenes MEDIANAS -->
+
+            <source media="(orientation: landscape) and (min-width: 901px)" srcset="./imagenesTienda/banner/bannerMed-h.heic" type="image/heic">
+            <source media="(orientation: landscape) and (min-width: 901px)" srcset="./imagenesTienda/banner/bannerMed-h.webp" type="image/webp">
+            <source media="(orientation: landscape) and (min-width: 901px)" srcset="./imagenesTienda/banner/bannerMed-h.jpg" type="image/jpeg">
+            <source media="(orientation: portrait) and (min-width:401px)" srcset="./imagenesTienda/banner/bannerMed-v.heic" type="image/heic">
+            <source media="(orientation: portrait) and (min-width:401px)" srcset="./imagenesTienda/banner/bannerMed-v.webp" type="image/webp">
+            <source media="(orientation: portrait) and (min-width:401px)" srcset="./imagenesTienda/banner/bannerMed-v.jpg" type="image/jpg">
+            
+            <!-- imágenes PEQUEÑAS -->
+            
+            <source media="(orientation: landscape) and (max-width: 900px)" srcset="./imagenesTienda/banner/bannerPeque-h.heic" type="image/heic">
+            <source media="(orientation: landscape) and (max-width: 900px)" srcset="./imagenesTienda/banner/bannerPeque-h.webp" type="image/webp">
+            <source media="(orientation: landscape) and (max-width: 900px)" srcset="./imagenesTienda/banner/bannerPeque-h.jpg" type="image/jpeg">
+            <source media="(orientation: portrait) and (min-width: 400px)" srcset="./imagenesTienda/banner/bannerPeque-v.heic" type="image/heic">
+            <source media="(orientation: portrait) and (min-width: 400px)" srcset="./imagenesTienda/banner/bannerPeque-v.webp" type="image/webp">
+            <source media="(orientation: portrait) and (min-width: 400px)" srcset="./imagenesTienda/banner/bannerPeque-v.jpg" type="image/jpg">
+
+            <img alt="Foto banner" title="Tienda de ropa" src="./imagenesTienda/banner/banner.jpg" />
+
+        </picture>
+
+    </nav>
+   
+    <main>
+        <header>
+            <h1>Inicio</h1>
+        </header>
+
+        <section id="indexSect">
+            <div id="indexHombre" class="indexf">
+                <p class="indexp">Ver ropa de hombre</p>
+                <a class="botonFotosIndex" href="Hombre.html">
+                <img class="fotosIndex" src="././imagenesTienda//inicio/hombre.jpg" alt="foto ropa arriba">
+                </a>
+            </div>
+            <div id="indexCentro" class="indexf">
+                <p class="indexp">Ver ropa de niños</p>
+                <a class="botonFotosIndex" href="Niños.html">
+                <img class="fotosIndex" src="././imagenesTienda//inicio/niños.jpg" alt="foto ropa niños">
+                </a>
+            </div>
+            <div id="indexMujer" class="indexf">
+                <p class="indexp">Ver ropa de mujer</p>
+                <a class="botonFotosIndex" href="Mujer.html">
+                <img class="fotosIndex" src="././imagenesTienda//inicio/woman.jpg" alt="foto pantalones">
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <a class="botonFooter" href="">Contáctanos</a>
+    </footer>
+</body>
+</html>
