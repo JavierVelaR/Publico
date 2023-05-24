@@ -35,12 +35,10 @@ function ponerDia(){
 
 function ponerNoche(){
     let todo = document.getElementById("todo");
-    todo.style.color="white";
-    todo.style.backgroundColor="darkslategrey";
-
+    todo.style.color="black";
+    todo.style.backgroundColor="grey";
+    
     window.localStorage.setItem("modoGuardado", "noche");
-    //document.body.backgroundColor="black";
-    //document.body.style.backgroundColor="black";
     
     let iconoNoche = document.getElementById("noche");
     iconoNoche.style.display = "none";

@@ -215,29 +215,39 @@ a {
 /*Caja que contiene la información*/
 #modalCuadrado{
     position: fixed;
-    top: 15%;
+    top: 20%;
     left: 20%;
     right: 20%;
-    bottom: 25%;
+    bottom: 20%;
     display: table-cell;
     vertical-align: middle;
 }
 
 /*Color de fondo de la parte central del modal*/
 #modalTexto{
+    height: 70%;
     background-color: azure;
 }
 
 /*Estilos de las partes superior e inferior del modal*/
 #modalHeader{
     margin-top: 0%;
-    padding: 10px 0;
+    padding: 8px 0;
     font-size: 1.3em;
+    background-color: aqua;
+}
+
+#modalFooter{
+    height: 15%;
     background-color: aqua;
 }
 
 #modalP,#modalH3,#modalH2{
     margin: 2px 15px;
+}
+
+#footerM{
+    margin: 0;
 }
 
 
