@@ -1,4 +1,5 @@
 var modo = leerModoActual();
+console.log(modo);
 
 if(modo=="dia"){
     ponerDia();
@@ -17,25 +18,37 @@ function leerModoActual(){
 }
 
 function ponerDia(){
-    window.localStorage.setItem("modoGuardado", "dia");
-    document.body.backgroundColor="salmon";
+    let todo = document.getElementById("todo");
+    todo.style.color="black";
+    todo.style.backgroundColor="rgb(238, 200, 154)";
     
-    let iconoDia = getElementById("dia");
+    window.localStorage.setItem("modoGuardado", "dia");
+    //document.body.backgroundColor="salmon";
+    
+    
+    let iconoDia = document.getElementById("dia");
     iconoDia.style.display = "none";
     
-    let iconoNoche = getElementById("noche");
+    let iconoNoche = document.getElementById("noche");
     iconoNoche.style.display = "block";
 }
 
 function ponerNoche(){
-    window.localStorage.setItem("modoGuardado", "noche");
-    document.body.backgroundColor="black";
+    let todo = document.getElementById("todo");
+    todo.style.color="white";
+    todo.style.backgroundColor="darkslategrey";
 
-    let iconoDia = getElementById("dia");
+    window.localStorage.setItem("modoGuardado", "noche");
+    //document.body.backgroundColor="black";
+    //document.body.style.backgroundColor="black";
+    
+    let iconoNoche = document.getElementById("noche");
+    iconoNoche.style.display = "none";
+    
+    let iconoDia = document.getElementById("dia");
     iconoDia.style.display = "block";
     
-    let iconoNoche = getElementById("noche");
-    iconoNoche.style.display = "none";
+    
 }
 
 function cambiarModo(){
@@ -46,7 +59,7 @@ function cambiarModo(){
     }
 }
 
-function cambiarTema(id){
+/*function cambiarTema(id){
     let boton = document.getElementById(id);
     let colorAnterior = boton.backgroundColor
     let colorSiguiente;
@@ -66,4 +79,4 @@ function cambiarTema(id){
         boton.style.backgroundColor = "white";
         boton.style.borderColor = "black";
     }
-}
+}*/

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="info">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="autor"/>
+                <xs:element ref="titulo"/>
+                <xs:choice maxOccurs="unbounded">
+                    <xs:element ref="descripcion"/>
+                    <xs:element ref="pagina"/>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="autor" type="xs:string"/>
+    <xs:element name="titulo" type="xs:string"/>
+    <xs:element name="descripcion" type="xs:string"/>
+    <xs:element name="pagina" type="xs:string"/>
+</xs:schema>
