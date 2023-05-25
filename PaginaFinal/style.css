@@ -7,7 +7,7 @@ html{
     cursor: url("./cursores/cursorAzul.png"),auto;
 }
 
-a:hover, button:hover, select:hover{
+a:hover, button:hover, select:hover, .imagenes:hover{
     cursor: url("./cursores/cursorZorro.png"), auto;
 }
 
