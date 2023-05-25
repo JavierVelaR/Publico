@@ -77,10 +77,10 @@ function cambiarTamanoFuente() {
 // Almacenar el nombre en el almacenamiento local (persistente hasta que se cierre la pestaña o se borren los datos)
 function guardarDatos() {
     let email = document.getElementById('campoEmail').value;
-    localStorage.setItem('email',email);
+    sessionStorage.setItem('email',email);
 
     let nombre = document.getElementById('campoUsuario').value;
-    localStorage.setItem('nombre', nombre);
+    sessionStorage.setItem('nombre', nombre);
   }
   
   // Cambiar el valor del nombre en la esquina
@@ -95,7 +95,7 @@ function guardarDatos() {
   
   // Cargar el nombre desde el almacenamiento local cuando se cargue la página
   window.addEventListener('load', function() {
-    let nombre = localStorage.getItem('nombre');
+    let nombre = sessionStorage.getItem('nombre');
     if (nombre) {
       document.getElementById('nombreUsuario').textContent = nombre;
     }else{
@@ -106,7 +106,7 @@ function guardarDatos() {
 
   //Borrar el nombre cuando se cierre la pestaña
   window.addEventListener('close', function() {
-    this.localStorage.removeItem('nombre');
+    this.sessionStorage.removeItem('nombre');
   });
 
   
