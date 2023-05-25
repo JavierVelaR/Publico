@@ -1,5 +1,5 @@
 var modo = leerModoActual();
-console.log(modo);
+console.log("Último modo guardado: ",modo);
 
 if(modo=="dia"){
     ponerDia();
@@ -12,9 +12,7 @@ function leerModoActual(){
     if(!modo){
         modo = "dia";
     }
-
     return modo;
-
 }
 
 function ponerDia(){
@@ -22,15 +20,18 @@ function ponerDia(){
     todo.style.color="black";
     todo.style.backgroundColor="rgb(238, 200, 154)";
     
-    window.localStorage.setItem("modoGuardado", "dia");
-    //document.body.backgroundColor="salmon";
-    
+    window.localStorage.setItem("modoGuardado", "dia");    
     
     let iconoDia = document.getElementById("dia");
-    iconoDia.style.display = "none";
-    
+   
+    if(iconoDia){
+        iconoDia.style.display = "none";
+    }
+
     let iconoNoche = document.getElementById("noche");
-    iconoNoche.style.display = "block";
+    if(iconoNoche){
+        iconoNoche.style.display = "block";
+    }
 }
 
 function ponerNoche(){
@@ -41,40 +42,61 @@ function ponerNoche(){
     window.localStorage.setItem("modoGuardado", "noche");
     
     let iconoNoche = document.getElementById("noche");
-    iconoNoche.style.display = "none";
+    if(iconoNoche){
+        iconoNoche.style.display = "none";
+    }
     
     let iconoDia = document.getElementById("dia");
-    iconoDia.style.display = "block";
-    
-    
-}
-
-function cambiarModo(){
-    if(modo=="dia"){
-        ponerNoche();
-    }else{
-        ponerDia();
+    if(iconoDia){
+        iconoDia.style.display = "block";
     }
 }
 
-/*function cambiarTema(id){
-    let boton = document.getElementById(id);
-    let colorAnterior = boton.backgroundColor
-    let colorSiguiente;
 
-    if(document.body.style.backgroundColor == "white"){
-        document.body.style.backgroundColor = "black";
-        document.body.style.color = "white";
-        boton.innerText = "☼";
-        boton.style.color = "white";
-        boton.style.backgroundColor = "black";
-        boton.style.borderColor = "white";
+function cambiarTamanoFuente() {
+    var selectElement = document.getElementById('tamFuente');
+    var selectedValue = selectElement.value;
+    var textoElement = document.getElementById('texto');
+    textoElement.style.fontSize = selectedValue;
+
+    document.getElementsByTagName(p).style.fontSize=selectedValue;
+}
+
+
+// Almacenar el nombre en el almacenamiento local (persistente hasta que se cierre la pestaña o se borren los datos)
+function guardarDatos() {
+    let email = document.getElementById('campoEmail').value;
+    localStorage.setItem('email',email);
+
+    let nombre = document.getElementById('campoUsuario').value;
+    localStorage.setItem('nombre', nombre);
+  }
+  
+  // Cambiar el valor del nombre en la esquina
+  function cambiarDatos() {
+    let email = document.getElementById('campoEmail').value;
+
+
+    let nombre = document.getElementById('campoUsuario').value;
+    document.getElementById('nombreUsuario').textContent = nombre;
+    guardarDatos();
+  }
+  
+  // Cargar el nombre desde el almacenamiento local cuando se cargue la página
+  window.addEventListener('load', function() {
+    let nombre = localStorage.getItem('nombre');
+    if (nombre) {
+      document.getElementById('nombreUsuario').textContent = nombre;
     }else{
-        document.body.style.backgroundColor = "white";
-        document.body.style.color = "black";
-        boton.innerText = "☾";
-        boton.style.color = "black";
-        boton.style.backgroundColor = "white";
-        boton.style.borderColor = "black";
+        document.getElementById('nombreUsuario').textContent = "Sin identificar";
+
     }
-}*/
+  });
+
+  //Borrar el nombre cuando se cierre la pestaña
+  window.addEventListener('close', function() {
+    this.localStorage.removeItem('nombre');
+  });
+
+  
+  

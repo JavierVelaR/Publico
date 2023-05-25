@@ -1,7 +1,14 @@
+html{
+    cursor: url("./cursor1.png"),auto;
+}
+
+a:hover, button:hover, select:hover{
+    cursor: url("./cursor2.png"), auto;
+}
+
 body {
     margin: 5vh, 5%;
     background-color: rgb(238, 200, 154);
-
 }
 
 h1 {
@@ -11,7 +18,11 @@ h1 {
 }
 
 footer {
-    margin-top: 10%;
+    position: fixed;
+    left: 0%;
+    bottom: 0%;
+    width: 85%;
+    height: auto;
 }
 
 .imagenes {
@@ -52,8 +63,8 @@ nav{
 
 .botonFooter {
     font-size: 1.2em;
-    width: 10%;
-    height: 50%;
+    width: 100px;
+    height: 60%;
     background-color: aquamarine;
 }
 
@@ -166,6 +177,27 @@ a {
 }
 
 
+/*Estilo para el nombre del usuario en la esquina*/
+
+
+#nombreUsuario{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+#nombre-esquina {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
 /*Estilo para el modal*/
 
 /*Boton para ocultar el modal*/
@@ -234,12 +266,12 @@ a {
     margin-top: 0%;
     padding: 8px 0;
     font-size: 1.3em;
-    background-color: aqua;
+    background-color: lightsalmon;
 }
 
 #modalFooter{
     height: 15%;
-    background-color: aqua;
+    background-color: lightsalmon;
 }
 
 #modalP,#modalH3,#modalH2{
@@ -259,14 +291,13 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: 10px 0;
     width: 100%;
-    height: 20%;
-    
+    height: 20%;   
 }
 
 .configP{
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 #zonaModo{
@@ -282,6 +313,16 @@ a {
     display: none;
     width: 100%;
 }
+
+#textoEjemplo{
+    margin-top: -40px;
+    margin-bottom: -15px;
+    padding: 0;
+}
+
+/*.mi-cursor{
+    cursor: url("");
+}*/
 
 
 

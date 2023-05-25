@@ -8,16 +8,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="todo">
-
     <nav class="naveg">
         <a id="botonInicio" class="boton" href="inicio.html">Inicio</a>
         <a class="boton"href="Hombre.html">Hombre</a>
         <a href="Mujer.html" class="boton">Mujer</a>
         <a href="Niños.html" class="boton">Niños</a>
-        <a id="botonInfo" class="boton" href="Info.html">Info</a>
-        <a id="botonModal" class="boton" href="#">Modal</a>
+        <a id="botonInfo" class="boton" href="Info.xml">Info</a>
+        <a id="botonModal" class="boton" href="#modalEntero">Modal</a>
         <a id="botonConfig" class="boton" href="Config.html">Config</a>
     </nav>
+
+    <div id="modalEntero" class="modal">
+        <div id="modalCuadrado">
+            <header id="modalHeader">
+                <a href="#" id="cerrarModal">Cerrar</a>
+                <h2 id="modalH2">Javier Vela Rivera, 1ºDAM</h2>
+            </header>
+
+            <div id="modalTexto">
+                <h3 id="modalH3">Requisitos cumplidos:</h3>
+                <ul>
+                    <li><p>Tema, usuario introducidos en "Configuración" guardado al recargar la página</p></li>
+                    <li><p>Página de info hecha con XML</p></li>
+                    <li><p>Se usa javascript para la lectura y escritura del ultimo tema elegido, y para el usuario</p></li>
+                    <li><p>Elementos HTML de ingreso de datos en la página Configuración</p></li>
+                </ul>
+                
+            </div>
+
+            <div id="modalFooter">
+                <footer id="footerM"></footer>
+            </div>
+        </div>
+    </div>
+
+    <div id="nombreUsuario">Sin identificar</div>
+  
     <div class="opciones">
         <p class="configP">Cambiar Tema: </p>
         <div id="zonaModo">
@@ -28,9 +54,28 @@
     </div>
 
     <div class="opciones">
-        <p class="configP">Usuario: </p>
-        <p>a</p>
+        <p class="configP">Tamaño de fuente:&nbsp;</p>
+        <select id="tamFuente" onchange="cambiarTamanoFuente()">
+            <option value="0.7em">Pequeña</option>
+            <option value="1em" selected="selected">Mediana</option>
+            <option value="1.5em">Grande</option>
+        </select>
+        
     </div>
+    <div id="textoEjemplo" class="opciones"><p id="texto">Texto de ejemplo</p></div>
+
+    <div class="opciones">
+        <p class="configP">Email:&nbsp;</p>
+        <input id="campoEmail" type="text" placeholder="Introduce tu email">
+    </div>
+
+    <div class="opciones">
+        <p class="configP">Usuario:&nbsp;</p>
+        <input id="campoUsuario" type="text" placeholder="Introduce tu nombre">
+    </div>
+    
+    <div class="opciones"><button id="aplicar" onclick="cambiarDatos()">Aplicar</button></div>
+
     
     <script src="javascript.js"></script>
 
