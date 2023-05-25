@@ -10,13 +10,13 @@
 	<descripcion>Página con imágenes clickables para ir a las páginas de hombre, mujer y niños; y un menú con la página de Info, el modal y la configuración.</descripcion>
 
 	<pagina>Hombre, Mujer y Niños</pagina>
-	<descripcion>Página que muestra ropa para hombres, mujeres y Niños. Con menú navegable entre ellos, el inicio, y las páginas info y configuración, además del modal.</descripcion>
+	<descripcion>Página que muestra ropa para hombres, mujeres y niños. Con menú navegable entre ellos, el inicio, y las páginas info y configuración, además del modal.</descripcion>
 	
 	<pagina>Info:</pagina>
 	<descripcion>Página de información sobre la página web.</descripcion>
 	
 	<pagina>Modal:</pagina>
-	<descripcion>Está integrada en cada página, explica los requisitos que se cumplen.</descripcion>
+	<descripcion>Está integrado en cada página, explica los requisitos no obvios que se cumplen.</descripcion>
 	
 	<pagina>Configuración:</pagina>
 	<descripcion>Página con los ajustes de la página, que se guardan al recargar la página.</descripcion>
